@@ -1,0 +1,144 @@
+// start header top 
+.header-top{
+
+    background-color: $secoundcolor;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    h3{
+        margin-left: 40px;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .left{
+        margin-right: 10px;
+    }
+    .right{
+        margin-left: 10px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+            margin-right: 20px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+// end header top 
+
+
+
+// start header bottom 
+.headre-bottom{
+    background-color: $maincolor;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    nav{
+        width: 55%;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                font-size: 16px;
+                margin-top: 15px;
+                font-weight: bold;
+                &:first-child{
+                    font-size: 30px;
+                    margin-top: 2px;
+                }
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
+
+    .right-side{
+        width :45%;
+        background-color: $maincolor;
+        color: #fff;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .icons ul{
+            margin-left: 120px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li{
+                font-size: 16px;
+                margin-left: 25px;
+                margin-top: 5px;
+                a{
+                    color: #fff;
+
+                }
+            }
+        }
+
+        .profile{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            h3{
+                color: #fff;
+                font-size: 20px;
+                margin-right: 5px;
+                margin-top: 2px;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-left: 10px;
+                margin-top: -4px;
+                // &:hover .info{
+                //     display: block;
+                // }
+            }
+            // .info{
+            //     position: absolute;
+            //     top: 10px;
+            //     right: 0;
+            //     width: 200px;
+            //     height: 200px;
+            //     background-color: #fff;
+            //     padding: 10px;
+            // }
+        }
+        .search{
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    margin-left: 25px;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+}
+// end header bottom 

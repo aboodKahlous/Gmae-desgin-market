@@ -1,0 +1,79 @@
+footer{
+    padding: 60px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    h3{
+        color: $textcolor;
+        margin-bottom: 30px;
+    }
+    .gallary{
+        width: 40%;
+        margin-left: 30px;
+        .img-box{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+            img{
+                border-radius: 20px;
+                margin-right: 7px;
+            }
+            .text{
+                h4{
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    margin-top: 40px;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+    .links{
+        width: 30%;
+        h3{
+            margin-left: 30px;
+        }
+        ul{
+            li{
+                margin-bottom: 30px;
+                i{
+                    margin-left: 10px;
+                }
+            }
+        }
+       
+    }
+    .contact{
+        width: 30%;
+        margin-right: 10px;
+        input , textarea{
+            width: 100%;
+            display: block;
+            outline: none;
+            border: 2px solid $maincolor;
+            background-color: rgba(0,0,0,0.3);
+            color: $maincolor;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        button{
+            margin-top: 0;
+        }
+        
+    }
+}
+
+.footer-bottom{
+    text-align: center;
+    background-color: $maincolor;
+    padding: 30px;
+    margin: 0;
+    h5{
+        font-size: 26px;
+        color: $textcolor;
+        text-align: center;
+    }
+}

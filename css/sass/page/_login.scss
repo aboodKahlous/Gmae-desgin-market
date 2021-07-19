@@ -1,0 +1,98 @@
+
+body{
+    background: url('/img/call-of-duty-mobile.jpg') no-repeat scroll  top center;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22 ,24 , 36,0.8);
+    z-index: 1;
+}
+/*       start login             */
+
+.obada{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    .log-in{
+        display: flex;
+        justify-content: center;
+        .img{
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        .form{
+            width: 50%;
+            background-color: $secoundcolor;
+            padding: 20px;
+            form{
+                h3{
+                    color: $textcolor;
+                    margin-bottom: 30px;
+                    font-size: 30px;
+                }
+                label{
+                    color: $textcolor;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    i{
+                        margin-right: 5px;
+                        color: $textcolor;
+                    }
+                }
+                input[type="email"],
+                input[type="password"]{
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    border: 2px solid $maincolor;
+                    outline: none;
+                    color: $textcolor;
+                    background-color: rgba(0,0,0,0.3);
+                    border-radius: 10px;
+                    margin: 20px auto;
+                }
+                .pass{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        color: $maincolor;
+                        cursor: pointer;
+                    }
+                }
+                button{
+                    display: block;
+                    padding: 10px 20px;
+                    margin-top: 10px 0 10px 0;
+                }
+                p{
+                    color: #555;
+                    margin-top: 20px;
+                    a{
+                        color: $maincolor;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*       end login             */

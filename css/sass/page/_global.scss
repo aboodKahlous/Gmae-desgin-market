@@ -1,0 +1,27 @@
+body{
+    background-color: $secoundcolor;
+    li,ol{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $secoundcolor;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $maincolor;
+  }
+  

@@ -1,0 +1,705 @@
+.top-section{
+    position: relative;
+    background: url('/img/cover-call.jpg') no-repeat  top center;
+    background-size: cover;
+    color: $textcolor;
+    text-align: center;
+    padding: 80px 120px 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .info{
+        z-index: 999;
+        p{
+            text-transform: uppercase;
+            font-size: 22px;
+            word-spacing: 10px;
+            margin-bottom: 30px;
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 33px;
+            margin-bottom: 30px;
+        }
+        p.login {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            width: 160px;
+            margin: 30px auto;
+            border: 2px solid $maincolor;
+            cursor: pointer;
+            transition: all .3s ease-out;
+            &:hover{
+                border: 2px solid $maincolor;
+                background-color: $maincolor;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        p.singup{
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            width: 160px;
+            margin: 30px auto;
+            border: 2px solid $maincolor;
+            background-color: $maincolor;
+            cursor: pointer;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    nav{
+        text-align: center;
+        z-index: 999;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            li{
+                list-style: none;
+                margin: 40px;
+                cursor: pointer;
+                div{
+                    background-color: $secoundcolor;
+                    border : 3px solid $maincolor;
+                    width: 60px;
+                    border-radius: 50%;
+                    padding: 5px;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    transition: all .3s ease-out;
+                    &:hover{
+                        background-color: $maincolor;
+                    }
+                    i{
+                        text-align: center;
+                        font-size:24px;
+                        padding: 10px;
+                        outline: $maincolor
+                    }
+                    
+                }
+                p{
+                    font-size: 20px;
+                    margin-top: 0px;
+                }
+                h3{
+                    font-size: 16px;
+                    margin-bottom: 0px;
+                    color: #faf3f3;
+                   
+                }
+                
+            }
+        }
+    }
+
+    .scroll{
+        margin-top: 60px;
+        z-index: 999;
+        h2{
+            margin-bottom: 0px;
+            font-size: 24px;
+        }
+        p{
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+        i{
+            margin-top: 30px;
+            cursor: pointer;
+            animation: updown 1s infinite alternate;
+        }
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(22 ,24 , 36,0.8);
+        z-index: 1;
+    }
+}
+
+// start  first section 
+
+section.first{
+    margin-top: 60px;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    .text{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        h3{
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 24px;
+            margin-left: 40px;
+        } 
+    }
+    .games{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        .img{
+            width: calc(90%/5);
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            img{
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+                border-radius: 40px;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: none;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 70px;
+                background-color: $maincolor;
+                opacity: 0.7;
+                border-radius: 50%;
+                z-index: 2;
+                i{
+                    color: #fff;
+                    font-size: 28px;
+                }
+            }
+        }
+        .img:hover img{
+            opacity: 0.1;
+        }
+        .img:hover p{
+            display: block;
+        }
+    }
+    .container{
+        .carousel{
+            margin-top: 30px;
+            width: 100%;
+            position: relative;
+            .carousel-indicators{
+                position: absolute;
+                right: 0; 
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                display: flex; 
+                justify-content: left;
+                padding: 0;
+                margin-right: 15%;
+                margin-bottom: 40px;
+                margin-left: 6%;
+                list-style: none;
+                button{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    border: 2px solid #fff;
+                    background-color: $maincolor;
+                }
+                .active{
+                    color: red;
+                }
+            }
+            .carousel-item{
+                img{
+                    height: 600px;
+                    border-radius: 40px;
+                }
+
+            }
+            .caption{
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 60px;
+                z-index: 2;
+                padding: 20px;
+                background-color: rgba(0,0,0,0.4);
+                border-radius: 20px;
+                h2{
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                    font-weight: bolder;
+                }
+                p{
+                    font-size: 20px;
+                }
+                button{
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+// end  first section 
+
+// start  special  game
+.special-games{
+    margin-top: 60px;
+    .special-game{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .game{
+            img{
+                width: 100%;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+            width: calc(90% / 4);
+            margin-bottom: 30px;
+            h2{
+                color: #fff;
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                width: 100%;
+            }
+            p{
+                color: #fff;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            .download{
+                margin-top: 10px;
+            }
+            .add{
+                outline: none;
+                border: none;
+                padding: 10px 15px;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                background-color: rgb(114, 111, 111);
+                margin: 20px 10px 10px 0;
+                cursor: pointer;
+                transition: all 0.3s;
+                border-radius: 50%;
+                &:hover{
+                    background-color: rgb(143, 142, 142);
+                }
+            }
+        }
+    }
+}
+
+
+
+// end  special  game
+
+
+// start secound section 
+section.secound{
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    .text{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 24px;
+            margin-left: 40px;
+        }
+    }
+    .artical{
+        margin-top: 30px;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        .img-left{
+            width: 100%;
+            height: 100%;
+            flex: 2;
+            margin: 20px;  
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                margin-top: 30px;
+                border-radius: 40px;
+                overflow: hidden;
+            }
+            .img-text{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 40%;
+                background-color: rgba(0,0,0,0.6);
+                border-radius: 40px;
+                padding: 20px;
+                h2{
+                    width: 80%;
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                    color: #fff;
+                }
+                p{
+                    width: 80%;
+                    font-size: 16px;
+                    color: #fff;
+                }
+                button{
+                    padding: 10px 10px;
+                    margin-top: 0;
+                }
+            }
+        }
+        .img-right{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 20px;
+            .img{
+                position: relative;
+                img{
+                    margin-bottom: 20px;
+                    width: 100%;
+                    height: 50%;    
+                    display: block;
+                    border-radius: 40px;
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    left: 0;
+                    bottom: 20px;
+                    padding: 20px;
+                    width: 100%;
+                    height: 50%;
+                    background-color: rgba(0,0,0,0.6);
+                    color: #fff;
+                    border-radius: 40px;
+                    h2{
+                        display: block;
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    .button{
+                        width: 120px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+           
+            
+        }
+
+    }
+    
+}
+
+// end secound section 
+
+
+
+// start third section 
+section.third{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .text{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 24px;
+            margin-left: 40px;
+        }
+        .icons{
+            position: relative;
+            i{
+                margin-right: 10px;
+                font-size: 20px;
+                color: $textcolor;
+                cursor: pointer;
+            }
+        }
+    }
+    .gmaes{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 40px;
+        transition: all 0.4s;
+        width: clac(96%/2);
+        .play{
+            .game{
+                display: flex;
+                justify-content: space-between;
+                border-radius: 40px;
+                transition: all 0.4s;
+                margin-top: 40px;
+                margin-left: 40px;
+                .image{
+                    flex: 1;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 40px;
+                    }
+                }  
+                .desc{
+                    flex: 2;
+                    margin-left: 10px;
+                    .when{
+                        color: $textcolor;
+                        font-size: 16px;
+                        padding: 8px;
+                        border-radius: 4px;
+                        margin-bottom: 20px;
+                        width: 16%;
+                        margin-top: 10px;
+                        background-color: rgba(112,96,254,0.4);
+                        i{
+                            margin-left: 5px;
+                        }
+                    }
+
+                    h3{
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        color: $textcolor;
+                        width: 100%;
+                    }
+
+                    p.text{
+                        color: $textcolor;
+                        margin-bottom: 20px;
+                        width: 100%;
+                        background-color: none;
+                    }
+
+                }
+                &:hover{
+                    background-color: rgba(112,96,254,0.1);
+                }
+               
+            }
+        }
+
+        .obada{
+            display: flex;
+            flex-direction: column;
+            .bla{
+                padding: 20px;
+                margin-top: 40px;
+                border-radius: 20px;
+                width: 400px;
+                margin: 20px auto;
+                margin-left: 140px;
+                background-color: rgba(112,96,254,0.1);
+                p.icon{
+                    color: #fff;
+                    font-size: 18px;
+                    border-radius: 5px;
+                }
+                h6{
+                    color: #fff;
+                    width: 100%;
+                    font-size: 16;
+                }
+                p.text{
+                    color: #666;
+                    font-size: 14px;
+                }
+                form{
+                    input[type="email"],
+                    input[type="password"]{
+                        padding: 10px;
+                        border-radius: 10px;
+                        width: 100%;
+                        background-color: rgba(0,0,0,0.3);
+                        border: 1px solid $maincolor;
+                        color: $maincolor;
+                        display: block;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    label{
+                        color: #fff;
+  
+                    }
+                    .download{
+                        margin:10px auto;
+                        i{
+                            margin-right: 20px;
+                        }
+                    }
+                    p{
+                        color: #666;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        a{
+                            color: $maincolor;
+                        }
+                    }
+                }
+
+            }
+            .png{
+                margin-left: 100px;
+                .carousel{
+                    width: 100%;
+                    height: 100%;
+                }
+                img{
+                    margin-top: 100px;
+                    width: 100%;
+                    height: 100%;
+                    animation: updownpng 2s infinite alternate; 
+                }
+            }
+        }
+    }
+    .pagination{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
+// end secound section 
+
+@keyframes updown{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes updownpng{
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/***************************** Start popup  ******************************************/
+.popup{
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 2;
+        display: none;
+      }
+      .content{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background-color: rgba(22 , 24 ,36 , 1);
+        z-index: 999;
+        width: 750px;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.01), 0 6px 20px 0 rgba(255, 255, 255, 0.01);
+        .close-btn{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 900;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .input-div{
+            position: relative;
+            display: grid;
+            grid-template-columns: 10% 90%;
+            padding: 5px 0;
+            border-bottom: 3px solid $maincolor;
+            input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                padding: 0.5rem 0.7rem;
+                font-size: 1.2rem;
+                color: $maincolor;  
+                font-family: 'poppins', sans-serif;
+            }
+            .i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .i i{
+                transition: .3s;    
+            }
+            
+            .popup .input-div > div{
+                position: relative;
+                height: 45px;
+            }
+            
+        }
+       
+      }
+} 
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transition: all 0.4s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+ 
+/***************************** end popup  ******************************************/
+
+
+
+
+

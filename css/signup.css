@@ -1,0 +1,405 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1270px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .text-center {
+    text-align: center;
+  }
+}
+
+body {
+  background-color: #161824;
+}
+body li, body ol {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #161824;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7060FE;
+}
+
+.main-button {
+  background-color: #7060FE;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  min-width: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+.main-button:hover {
+  background-color: #3997c2;
+}
+
+.secound-button {
+  background-color: #ffa600;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  min-width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+.secound-button:hover {
+  background-color: #dd9b1f;
+}
+
+.toggle-menu {
+  margin-top: 10px;
+  background-color: #7060FE;
+  border: none;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 767px) {
+  .toggle-menu {
+    display: block;
+  }
+}
+.toggle-menu:focus {
+  outline: none;
+}
+.toggle-menu span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+.toggle-menu span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #7060FE;
+  color: #fff;
+  margin-right: 40px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+  cursor: pointer;
+}
+.button span {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.button span::after {
+  content: "»";
+  font-size: 16px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 15px;
+}
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.download {
+  padding: 10px 20px;
+  background-color: #7060FE;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 20px 10px 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.download:hover {
+  background-color: #897ee7;
+  color: #fff;
+}
+
+.favforet {
+  padding: 10px 20px;
+  background-color: #726f6f;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 20px 10px 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.favforet:hover {
+  background-color: #8f8e8e;
+  color: #fff;
+}
+.favforet i {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.pagination {
+  display: inline-block;
+  margin-left: 130px;
+}
+.pagination a {
+  color: #fff;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.pagination a:hover:not(.active) {
+  background-color: #7060FE;
+  border-radius: 5px;
+}
+.pagination .active {
+  background-color: #7060FE;
+  color: white;
+  border-radius: 5px;
+}
+
+#scroolup {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  display: none;
+}
+
+#scroolup i {
+  font-size: 60px;
+  cursor: pointer;
+  color: #7060FE;
+  z-index: 99999;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted red;
+}
+
+.tooltip .tooltiptextright {
+  visibility: hidden;
+  width: 120px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+
+.tooltip .tooltiptextright::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent red;
+}
+
+.tooltip:hover .tooltiptextright {
+  visibility: visible;
+}
+
+.signup {
+  width: 100%;
+  margin: 0 auto;
+}
+.signup .container-signup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.signup .img-bk {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% - 450px);
+  position: relative;
+  z-index: 1;
+}
+.signup .img-bk::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#161824), to(#3c4369));
+  background-image: linear-gradient(to right, #161824, #3c4369);
+  opacity: 0.8;
+}
+.signup .sing-up {
+  width: 450px;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  padding: 20px;
+}
+.signup .sing-up p {
+  display: block;
+  width: 100%;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.signup .sing-up .form-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 45px;
+}
+.signup .sing-up label {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: #999999;
+  line-height: 1.2;
+  font-weight: bold;
+  padding-left: 2px;
+}
+.signup .sing-up input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.signup .sing-up input:focus input-placeholder {
+  color: transparent;
+}
+.signup .sing-up input:focus input-placeholder {
+  color: #cccccc;
+}
+.signup .sing-up .btn-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.signup .sing-up .btn-sign .sign-up-btn {
+  border: none;
+  padding: 10px 30px;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #7060FE;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.signup .sing-up .btn-sign .sign-up-btn:focus {
+  outline: none;
+}
+.signup .sing-up .btn-sign .sign-up-btn p {
+  float: right;
+  margin-top: 20px;
+}

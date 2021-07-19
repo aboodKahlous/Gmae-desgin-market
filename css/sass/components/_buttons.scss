@@ -1,0 +1,218 @@
+.main-button{
+    background-color: $maincolor;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    min-width: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    &:hover{
+        background-color: #3997c2;
+    }
+}
+
+.secound-button{
+    background-color: rgb(255, 166, 0);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    min-width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    &:hover{
+        background-color: rgb(221, 155, 31);
+    }
+}
+
+.toggle-menu {
+    margin-top: 10px;
+    background-color: $maincolor;
+    border: none;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none; 
+    @media (max-width : 767px){
+        display: block;
+    }
+    &:focus{
+        outline : none;
+    }
+    span{
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #fff;
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+    }
+}
+
+
+.button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: $maincolor;
+    color: #fff;
+    margin-right: 40px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    transform: all 0.5s;
+    cursor: pointer;
+    span{
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.5s;
+        &::after{
+            content: '\00bb';
+            font-size: 16px;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+        }
+    }
+    &:hover span{
+        padding-right: 15px;
+    }
+    &:hover span::after{
+        opacity: 1;
+        right: 0;
+    }
+    
+}   
+
+.download{
+    padding: 10px 20px;
+    background-color: $maincolor;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 20px 10px 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    border-radius: 10px;
+    &:hover{
+        background-color: $hovercolor;
+        color: #fff;
+    }
+}
+
+.favforet{
+    padding: 10px 20px;
+    background-color: rgb(114, 111, 111);
+    color: #fff;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 20px 10px 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgb(143, 142, 142);
+        color: #fff;
+    }
+    i{
+        margin-right: 5px;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+
+
+
+.pagination{
+    display: inline-block;
+    margin-left: 130px;
+    a{
+        color: #fff;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5px;
+        transition: all 0.3s ease-in-out;
+          &:hover:not(.active){
+            background-color: $maincolor;
+            border-radius: 5px;
+          }
+      }
+      .active {
+        background-color: $maincolor;
+        color: white;
+        border-radius: 5px;
+      }
+      
+}
+
+#scroolup {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: none;
+}
+
+#scroolup i {
+    font-size: 60px;
+    cursor: pointer;
+    color: $maincolor;
+    z-index: 99999;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted red;
+  }
+  
+  .tooltip .tooltiptextright {
+    visibility: hidden;
+    width: 120px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+  }
+  
+  .tooltip .tooltiptextright::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent red;
+  }
+  .tooltip:hover .tooltiptextright {
+    visibility: visible;
+  }
