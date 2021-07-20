@@ -128,6 +128,69 @@
         background-color: rgba(22 ,24 , 36,0.8);
         z-index: 1;
     }
+    @media(max-width : 767px){
+        .info{
+            p{
+                font-size: 16px;
+            }
+            h2{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            p.login {
+                display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                padding: 10px 20px;
+                width: 120px;
+                font-size: 15px;
+            }
+            p.singup{
+                display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                padding: 10px 20px;
+                width: 120px;
+                font-size: 15px;
+            }
+        }
+
+        nav{
+            text-align: center;
+            z-index: 999;
+            ul{
+                li{
+                    margin: 20px;
+                    div{
+                        width: 60px;
+                        i{
+                            font-size:18px;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    h3{
+                        font-size: 14px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .scroll{
+        margin-top: 30px;
+        z-index: 999;
+        h2{
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        i{
+            margin-top: 30px;
+            cursor: pointer;
+            animation: updown 1s infinite alternate;
+        }
+    }
 }
 
 // start  first section 

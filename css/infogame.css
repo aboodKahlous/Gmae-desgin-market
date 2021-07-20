@@ -132,6 +132,35 @@ body a {
   margin-bottom: 3px;
 }
 
+.toggle-menuu {
+  margin-top: 10px;
+  background-color: #7060FE;
+  border: none;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 767px) {
+  .toggle-menuu {
+    display: block;
+  }
+}
+.toggle-menuu:focus {
+  outline: none;
+}
+.toggle-menuu span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+.toggle-menuu span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
 .button {
   padding: 5px 10px;
   border-radius: 5px;

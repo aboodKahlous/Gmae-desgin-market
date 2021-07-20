@@ -31,3 +31,22 @@ $(".pagination a").on('click' , function(){
 
 // animation on scroll
 AOS.init();
+
+// toggle-menu
+
+$(document).ready(function(){
+    
+    $('.toggle-menu').on('click' , function(){
+        $('.main-nav').slideToggle(500);
+    })
+
+});
+
+
+$(document).ready(function(){
+    
+    $('.toggle-menuu').on('click' , function(){
+        $('.headre-bottom').slideToggle(500);
+    })
+
+});

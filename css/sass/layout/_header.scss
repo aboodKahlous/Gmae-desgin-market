@@ -1,6 +1,5 @@
 // start header top 
 .header-top{
-
     background-color: $secoundcolor;
     color: #fff;
     display: flex;
@@ -31,6 +30,77 @@
             }
         }
     }
+    @media (max-width: 767px){
+        display: block;
+        margin-bottom: 10px;
+        h3{
+            font-size: 14px;
+            margin-left: 4px;
+            padding-top: 20px;
+        }
+        .left{
+            margin-right: 0;
+        }
+        .right{
+            margin-left: 0;
+        }
+        ul{
+            display: none;
+            margin-left: 0;
+            li{
+                display: block;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    .toggle-menu {
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        cursor: pointer;
+        display: none; 
+        margin-bottom: 10px;
+        border-radius: 8px;
+        @media (max-width : 767px){
+            display: block;
+        }
+        &:focus{
+            outline : none;
+        }
+        i{
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+    .toggle-menuu {
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 60px;
+        cursor: pointer;
+        display: none; 
+        margin-bottom: 10px;
+        border-radius: 8px;
+        @media (max-width : 767px){
+            display: block;
+        }
+        &:focus{
+            outline : none;
+        }
+        i{
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+
+
 }
 
 // end header top 
@@ -45,6 +115,11 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
+    @media (max-width : 767px){
+        display: flex;
+        flex-direction: column;
+    }
     nav{
         width: 55%;
 
@@ -89,6 +164,9 @@
                     color: #fff;
 
                 }
+                .fa-search{
+                    display: none;
+                }
             }
         }
 
@@ -110,19 +188,7 @@
                 cursor: pointer;
                 margin-left: 10px;
                 margin-top: -4px;
-                // &:hover .info{
-                //     display: block;
-                // }
             }
-            // .info{
-            //     position: absolute;
-            //     top: 10px;
-            //     right: 0;
-            //     width: 200px;
-            //     height: 200px;
-            //     background-color: #fff;
-            //     padding: 10px;
-            // }
         }
         .search{
             ul{
@@ -136,9 +202,56 @@
                         color: #fff;
                     }
                 }
+                
             }
         }
 
     }
+    @media (max-width : 767px){
+        display: none;
+        nav{
+            width: 100%;
+    
+            ul{
+                display: block;
+                li{
+                    font-size: 14px;
+                    margin-top: 5px;
+                    &:first-child{
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+
+        .right-side{
+            width :100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            .icons ul{
+                margin-left: -40px;
+                display: block;
+                li{
+                    font-size: 16px;
+                    float: left;
+                    .fa-search{
+                        display: block;
+                        margin-top: 4px;
+                    }
+                }
+            }
+
+            .search{
+                display: none;
+            }
+
+            .profile{
+                display: none;
+            }
+        }
+
+    }
+    
 }
 // end header bottom 
