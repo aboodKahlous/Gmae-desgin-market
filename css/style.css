@@ -227,6 +227,11 @@ body a {
   color: white;
   border-radius: 5px;
 }
+@media (max-width: 767px) {
+  .pagination {
+    margin-left: 10px;
+  }
+}
 
 #scroolup {
   position: fixed;
@@ -951,6 +956,62 @@ section.first .container .carousel .caption p {
 section.first .container .carousel .caption button {
   width: 160px;
 }
+@media (max-width: 767px) {
+  section.first .text h3 {
+    font-size: 18px;
+  }
+  section.first .text .button {
+    padding: 2px 8px;
+  }
+  section.first .games {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+  }
+  section.first .games .img {
+    width: calc(94% / 2);
+  }
+  section.first .games .img img {
+    width: 100%;
+  }
+  section.first .games .img p {
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
+  }
+  section.first .container .carousel .carousel-indicators {
+    left: -14px;
+    bottom: 20px;
+    margin-bottom: 10px;
+  }
+  section.first .container .carousel .carousel-item img {
+    height: 400px;
+    border-radius: 40px;
+  }
+  section.first .container .carousel .caption {
+    top: 150px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.01);
+  }
+  section.first .container .carousel .caption h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+  section.first .container .carousel .caption p {
+    font-size: 16px;
+  }
+  section.first .container .carousel .caption button {
+    width: 120px;
+  }
+}
 
 .special-games {
   margin-top: 60px;
@@ -1005,6 +1066,31 @@ section.first .container .carousel .caption button {
 }
 .special-games .special-game .game .add:hover {
   background-color: #8f8e8e;
+}
+@media (max-width: 767px) {
+  .special-games .special-game {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .special-games .special-game .game {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .special-games .special-game .game h2 {
+    font-size: 18px;
+  }
+  .special-games .special-game .game p {
+    font-size: 16px;
+  }
+  .special-games .special-game .game .download {
+    margin-top: 10px;
+  }
 }
 
 section.secound {
@@ -1131,6 +1217,88 @@ section.secound .artical .img-right .img .text p {
 section.secound .artical .img-right .img .text .button {
   width: 120px;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  section.secound .text h3 {
+    font-size: 18px;
+  }
+  section.secound .text .button {
+    padding: 2px 8px;
+  }
+  section.secound .artical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.secound .artical .img-left {
+    position: relative;
+  }
+  section.secound .artical .img-left img {
+    margin-top: 10px;
+  }
+  section.secound .artical .img-left .img-text {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  section.secound .artical .img-left .img-text h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  section.secound .artical .img-left .img-text p {
+    font-size: 14px;
+  }
+  section.secound .artical .img-left .img-text button {
+    padding: 2px 8px;
+  }
+  section.secound .artical .img-right {
+    margin: 20px;
+  }
+  section.secound .artical .img-right .img {
+    position: relative;
+  }
+  section.secound .artical .img-right .img img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50%;
+    display: block;
+    border-radius: 40px;
+  }
+  section.secound .artical .img-right .img .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 40px;
+  }
+  section.secound .artical .img-right .img .text h2 {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  section.secound .artical .img-right .img .text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  section.secound .artical .img-right .img .text button {
+    padding: 2px 8px;
+  }
 }
 
 section.third {
@@ -1437,6 +1605,12 @@ section.third .pagination {
 .popup .content .input-div .popup .input-div > div {
   position: relative;
   height: 45px;
+}
+@media (max-width: 767px) {
+  .popup .content {
+    width: 80%;
+    height: 120px;
+  }
 }
 
 .popup.active .overlay {

@@ -266,6 +266,11 @@ body a {
   color: white;
   border-radius: 5px;
 }
+@media (max-width: 767px) {
+  .pagination {
+    margin-left: 10px;
+  }
+}
 
 #scroolup {
   position: fixed;
