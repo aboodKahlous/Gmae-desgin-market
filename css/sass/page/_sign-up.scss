@@ -1,6 +1,7 @@
 .signup{
     width: 100%;
     margin: 0 auto;
+    background-color: #161824;
     .container-signup{
         width: 100%;  
         display: flex;
@@ -35,12 +36,13 @@
         border-radius: 2px;
         position: relative;
         padding: 20px;
+        background-color: #161824;
         p{
             display: block;
             width: 100%;
             font-family: Poppins-Bold;
             font-size: 39px;
-            color: #333333;
+            color: #fff;
             line-height: 1.2;
             text-align: left;
             margin-bottom: 30px;
@@ -48,13 +50,13 @@
         .form-input{
             width: 100%;
             position: relative;
-            border-bottom: 2px solid #dbdbdb;
+            border-bottom: 2px solid #7060FE;
             margin-bottom: 45px;
         }
         label{
             font-family: Poppins-SemiBold;
             font-size: 18px;
-            color: #999999;
+            color: #fff;
             line-height: 1.2;
             font-weight: bold;
             padding-left: 2px;
@@ -77,31 +79,21 @@
                 input-placeholder {color: #cccccc;}
             }
         }
-        .btn-sign{
-                display: flex;
-                justify-content: space-between;
-            .sign-up-btn{
-                border: none;
-                padding: 10px 30px;
-                outline: none;
-                font-size: 20px;
-                color: #fff;
-                border-radius: 10px;
-                background-color: $maincolor;
-                margin-top: 20px;
-                cursor: pointer;
-                &:focus{
-                    outline: none;
-                }
-                p{
-                    float: right;
-                    margin-top: 20px;
-                }
-            }
+        .button{
+            padding: 10px 20px;
         }
-        
         
     }
 
-   
+   @media (max-width : 767px){
+    .container-signup{
+        width: 100%;  
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .sing-up{
+        width: 100%;
+    }
+   }
 }

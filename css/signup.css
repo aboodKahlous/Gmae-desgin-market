@@ -325,6 +325,7 @@ body a {
 .signup {
   width: 100%;
   margin: 0 auto;
+  background-color: #161824;
 }
 .signup .container-signup {
   width: 100%;
@@ -365,13 +366,14 @@ body a {
   border-radius: 2px;
   position: relative;
   padding: 20px;
+  background-color: #161824;
 }
 .signup .sing-up p {
   display: block;
   width: 100%;
   font-family: Poppins-Bold;
   font-size: 39px;
-  color: #333333;
+  color: #fff;
   line-height: 1.2;
   text-align: left;
   margin-bottom: 30px;
@@ -379,13 +381,13 @@ body a {
 .signup .sing-up .form-input {
   width: 100%;
   position: relative;
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 2px solid #7060FE;
   margin-bottom: 45px;
 }
 .signup .sing-up label {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: #999999;
+  color: #fff;
   line-height: 1.2;
   font-weight: bold;
   padding-left: 2px;
@@ -412,29 +414,23 @@ body a {
 .signup .sing-up input:focus input-placeholder {
   color: #cccccc;
 }
-.signup .sing-up .btn-sign {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.signup .sing-up .button {
+  padding: 10px 20px;
 }
-.signup .sing-up .btn-sign .sign-up-btn {
-  border: none;
-  padding: 10px 30px;
-  outline: none;
-  font-size: 20px;
-  color: #fff;
-  border-radius: 10px;
-  background-color: #7060FE;
-  margin-top: 20px;
-  cursor: pointer;
-}
-.signup .sing-up .btn-sign .sign-up-btn:focus {
-  outline: none;
-}
-.signup .sing-up .btn-sign .sign-up-btn p {
-  float: right;
-  margin-top: 20px;
+@media (max-width: 767px) {
+  .signup .container-signup {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .signup .sing-up {
+    width: 100%;
+  }
 }
