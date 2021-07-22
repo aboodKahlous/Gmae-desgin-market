@@ -633,7 +633,7 @@ body a {
 
 .top-section {
   position: relative;
-  background: url("../../../img/cover-call.jpg") no-repeat top center;
+  background: no-repeat top center;
   background-size: cover;
   color: #fff;
   text-align: center;
