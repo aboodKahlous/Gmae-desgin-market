@@ -64,6 +64,39 @@ footer{
         }
         
     }
+
+    @media (max-width : 767px){
+        display: flex;
+        flex-direction: column;
+        .gallary{
+            width: 95%;
+            margin: 20px auto;
+            .img-box{
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                img{
+                    margin-right: 10px;
+                    width: 180px;
+                    height: 180px;
+
+                }
+            }
+        }
+
+        .links{
+            width: 100%;
+            h3{
+                margin-left: 10px;
+            }
+        }
+
+        .contact{
+            width: 95%;
+            margin: 20px auto ;
+        }
+
+    }
 }
 
 .footer-bottom{
@@ -76,4 +109,13 @@ footer{
         color: $textcolor;
         text-align: center;
     }
+    @media (max-width : 767px){
+        padding: 10px;  
+        h5{
+            font-size: 18px;
+            color: $textcolor;
+            text-align: center;
+        }
+    }
+
 }

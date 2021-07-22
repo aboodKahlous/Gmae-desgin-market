@@ -1233,11 +1233,11 @@ section.secound .artical .img-right .img .text .button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   section.secound .artical .img-left {
     position: relative;
+    margin: 0;
+    margin-bottom: 10px;
   }
   section.secound .artical .img-left img {
     margin-top: 10px;
@@ -1257,7 +1257,9 @@ section.secound .artical .img-right .img .text .button {
     padding: 2px 8px;
   }
   section.secound .artical .img-right {
-    margin: 20px;
+    margin: 0;
+    width: 90%;
+    margin: 20px auto;
   }
   section.secound .artical .img-right .img {
     position: relative;
@@ -1302,8 +1304,6 @@ section.secound .artical .img-right .img .text .button {
 }
 
 section.third {
-  padding-top: 30px;
-  padding-bottom: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -1337,10 +1337,8 @@ section.third .gmaes {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 40px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: clac(96%/2);
 }
 section.third .gmaes .play .game {
   display: -webkit-box;
@@ -1479,6 +1477,79 @@ section.third .gmaes .obada .png img {
 section.third .pagination {
   margin-top: 30px;
   margin-left: 20px;
+}
+@media (max-width: 767px) {
+  section.third .text h3 {
+    font-size: 18px;
+  }
+  section.third .text .button {
+    padding: 2px 8px;
+  }
+  section.third .gmaes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.third .gmaes .play .game {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+  }
+  section.third .gmaes .play .game .image img {
+    width: 200px;
+    height: 200px;
+  }
+  section.third .gmaes .play .game .desc {
+    margin-left: 10px;
+  }
+  section.third .gmaes .play .game .desc .when {
+    margin-bottom: 10px;
+    width: 14%;
+  }
+  section.third .gmaes .play .game .desc h3 {
+    font-size: 18px;
+  }
+  section.third .gmaes .play .game .desc p.text {
+    font-size: 14px;
+  }
+  section.third .gmaes .play .game .desc .download {
+    padding: 5px 10px;
+  }
+  section.third .gmaes .play .game .desc .favforet {
+    padding: 5px 10px;
+  }
+  section.third .gmaes .obada {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.third .gmaes .obada .bla {
+    width: 100%;
+    margin: 20px;
+    margin-left: 0;
+  }
+  section.third .gmaes .obada .png {
+    margin-left: 10px;
+  }
+  section.third .gmaes .obada .png img {
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @-webkit-keyframes updown {
@@ -1694,6 +1765,45 @@ footer .contact input, footer .contact textarea {
 footer .contact button {
   margin-top: 0;
 }
+@media (max-width: 767px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .gallary {
+    width: 95%;
+    margin: 20px auto;
+  }
+  footer .gallary .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+  footer .gallary .img-box img {
+    margin-right: 10px;
+    width: 180px;
+    height: 180px;
+  }
+  footer .links {
+    width: 100%;
+  }
+  footer .links h3 {
+    margin-left: 10px;
+  }
+  footer .contact {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
 
 .footer-bottom {
   text-align: center;
@@ -1705,4 +1815,14 @@ footer .contact button {
   font-size: 26px;
   color: #fff;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .footer-bottom {
+    padding: 10px;
+  }
+  .footer-bottom h5 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
 }

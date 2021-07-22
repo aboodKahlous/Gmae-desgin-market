@@ -576,9 +576,10 @@ section.secound{
         .artical{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             .img-left{
                 position: relative;
+                margin: 0;
+                margin-bottom: 10px;
                 img{
                     margin-top: 10px;
                 }
@@ -599,7 +600,9 @@ section.secound{
             }
 
             .img-right{
-                margin: 20px;
+                margin: 0;
+                width: 90%;
+                margin: 20px auto;
                 .img{
                     position: relative;
                     img{
@@ -648,8 +651,6 @@ section.secound{
 
 // start third section 
 section.third{
-    padding-top: 30px;
-    padding-bottom: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
     .text{
@@ -674,9 +675,7 @@ section.third{
     .gmaes{
         display: flex;
         justify-content: space-between;
-        border-radius: 40px;
         transition: all 0.4s;
-        width: clac(96%/2);
         .play{
             .game{
                 display: flex;
@@ -810,6 +809,74 @@ section.third{
     .pagination{
         margin-top: 30px;
         margin-left: 20px;
+    }
+    @media (max-width: 767px){
+        .text{
+            h3{
+                font-size: 18px;
+            } 
+            .button{
+                padding: 2px 8px;
+            }
+        }
+
+        .gmaes{
+            display: flex;
+            flex-direction: column;
+            .play{
+                .game{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0;
+                    padding: 10px;
+                    .image{
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                    } 
+                    .desc{
+                        margin-left: 10px;
+                        .when{
+                            margin-bottom: 10px;
+                            width: 14%;
+                        }
+                        h3{
+                            font-size: 18px;
+                        }
+                        p.text{
+                            font-size: 14px;
+                        }
+                        .download{
+                            padding: 5px 10px;
+                        }
+                        .favforet{
+                            padding: 5px 10px;
+                        }
+    
+                    }
+                }
+                
+            }
+            .obada{
+                display: flex;
+                flex-direction: column;
+                .bla{
+                    width: 100%;
+                    margin: 20px;
+                    margin-left: 0;
+                }
+                .png{
+                    margin-left: 10px;
+                    img{
+                        margin-top: 20px;
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+
     }
 }
 
