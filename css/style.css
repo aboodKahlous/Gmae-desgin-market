@@ -633,7 +633,8 @@ body a {
 
 .top-section {
   position: relative;
-  background: no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   color: #fff;
   text-align: center;
