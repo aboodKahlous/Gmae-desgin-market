@@ -800,19 +800,19 @@ body a {
     z-index: 999;
   }
   .top-section nav ul li {
-    margin: 20px;
+    margin: 15px;
   }
   .top-section nav ul li div {
-    width: 60px;
+    width: 50px;
   }
   .top-section nav ul li div i {
-    font-size: 18px;
-  }
-  .top-section nav ul li p {
     font-size: 16px;
   }
-  .top-section nav ul li h3 {
+  .top-section nav ul li p {
     font-size: 14px;
+  }
+  .top-section nav ul li h3 {
+    font-size: 12px;
   }
 }
 .top-section .scroll {
