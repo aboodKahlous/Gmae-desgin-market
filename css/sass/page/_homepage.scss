@@ -967,7 +967,10 @@ section.third{
                 cursor: pointer;
             }
             .i i{
-                transition: .3s;    
+                transition: .3s;   
+                position: absolute;
+                top: 9px;
+                left: 0;
             }
             
             .popup .input-div > div{
@@ -980,9 +983,21 @@ section.third{
       }
       @media (max-width: 767px){
           .content{
-              width: 80%;
-              height: 120px;
+              width: 70%;
+              height: auto;
+              padding: 10px;
+              .i{
+                font-size: 18px;
+            }
+            i{
+                font-size: 16px;
+                position: absolute;
+                top: 14px;
+                left: 0;
+            }
+
           }
+          
       }
 } 
 .popup.active .overlay{

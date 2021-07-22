@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   background-color: #161824;
+  font-family: "Poppins", sans-serif;
 }
 body li, body ol {
   list-style: none;
@@ -1672,6 +1673,9 @@ section.third .pagination {
 .popup .content .input-div .i i {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: absolute;
+  top: 9px;
+  left: 0;
 }
 .popup .content .input-div .popup .input-div > div {
   position: relative;
@@ -1679,8 +1683,18 @@ section.third .pagination {
 }
 @media (max-width: 767px) {
   .popup .content {
-    width: 80%;
-    height: 120px;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+  }
+  .popup .content .i {
+    font-size: 18px;
+  }
+  .popup .content i {
+    font-size: 16px;
+    position: absolute;
+    top: 14px;
+    left: 0;
   }
 }
 
