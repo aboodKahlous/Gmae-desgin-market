@@ -323,7 +323,8 @@ body a {
 }
 
 body {
-  background: no-repeat scroll top center;
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
 }
 
