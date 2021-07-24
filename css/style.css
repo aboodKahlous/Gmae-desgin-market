@@ -1523,9 +1523,8 @@ section.third .pagination {
             flex-direction: column;
   }
   section.third .gmaes .obada .bla {
-    width: 100%;
-    margin: 20px;
-    margin-left: 0;
+    width: 95%;
+    margin: 20px auto;
   }
   section.third .gmaes .obada .png {
     margin-left: 10px;
