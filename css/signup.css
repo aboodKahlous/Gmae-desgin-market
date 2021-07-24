@@ -269,7 +269,7 @@ body a {
 }
 @media (max-width: 767px) {
   .pagination {
-    margin-left: 10px;
+    margin-left: -10px;
   }
 }
 

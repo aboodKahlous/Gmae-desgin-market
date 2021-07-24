@@ -160,6 +160,9 @@
             text-align: center;
             z-index: 999;
             ul{
+                display: flex;
+                justify-content: space-between;
+                margin-left: -30px;
                 li{
                     margin: 5px;
                     div{
@@ -437,7 +440,7 @@ section.first{
             justify-content: space-evenly;
             flex-wrap: wrap;
             .game{
-                width: (96% / 2);
+                width: 100%;
                 margin-bottom: 30px;
                 h2{
                     font-size: 18px;
@@ -447,8 +450,12 @@ section.first{
                 }
                 .download{
                     margin-top: 10px;
+                    padding: 8px 16px;
                 }
             }
+
+
+
         }
     }
 }
@@ -585,18 +592,7 @@ section.secound{
                     margin-top: 10px;
                 }
                 .img-text{
-                    height: auto;
-                    background-color: rgba(0,0,0,0.2);
-                    h2{
-                        font-size: 16px;
-                        margin-bottom: 5px;
-                    }
-                    p{
-                        font-size: 14px;
-                    }
-                    button{
-                        padding: 2px 8px;
-                    }
+                   display: none;
                 }
             }
 
@@ -614,29 +610,7 @@ section.secound{
                         border-radius: 40px;
                     }
                     .text{
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                        left: 0;
-                        bottom: 20px;
-                        padding: 20px;
-                        width: 100%;
-                        height: 50%;
-                        background-color: rgba(0,0,0,0.6);
-                        color: #fff;
-                        border-radius: 40px;
-                        h2{
-                            display: block;
-                            font-size: 15px;
-                            margin-bottom: 10px;
-                        }
-                        p{
-                            font-size: 14px;
-                            margin-bottom: 10px;
-                        }
-                        button{
-                            padding: 2px 8px;
-                        }
+                        display: none;
                     }
                 }
                
@@ -840,7 +814,7 @@ section.third{
                         margin-left: 10px;
                         .when{
                             margin-bottom: 10px;
-                            width: 14%;
+                            width: 20%;
                         }
                         h3{
                             font-size: 18px;
@@ -877,7 +851,10 @@ section.third{
                 }
             }
         }
-
+        .pagination{
+            margin-top: 10px;
+            margin-left: -10px;
+        }
     }
 }
 
@@ -984,16 +961,19 @@ section.third{
       }
       @media (max-width: 767px){
           .content{
-              width: 70%;
-              height: auto;
-              padding: 10px;
+                width: 60%;
+                height: auto;
+                padding: 10px;
+                top: 50%;
+                left: 40%;
+                transform: translate(-50%,-50%) scale(0);
               .i{
                 font-size: 18px;
             }
             i{
                 font-size: 16px;
                 position: absolute;
-                top: 14px;
+                top: 18px;
                 left: 0;
             }
 

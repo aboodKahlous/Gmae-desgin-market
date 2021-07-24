@@ -230,7 +230,7 @@ body a {
 }
 @media (max-width: 767px) {
   .pagination {
-    margin-left: 10px;
+    margin-left: -10px;
   }
 }
 
@@ -800,8 +800,17 @@ body a {
     text-align: center;
     z-index: 999;
   }
+  .top-section nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: -30px;
+  }
   .top-section nav ul li {
-    margin: 15px;
+    margin: 5px;
   }
   .top-section nav ul li div {
     width: 50px;
@@ -1081,7 +1090,7 @@ section.first .container .carousel .caption button {
         flex-wrap: wrap;
   }
   .special-games .special-game .game {
-    width: 48%;
+    width: 100%;
     margin-bottom: 30px;
   }
   .special-games .special-game .game h2 {
@@ -1092,6 +1101,7 @@ section.first .container .carousel .caption button {
   }
   .special-games .special-game .game .download {
     margin-top: 10px;
+    padding: 8px 16px;
   }
 }
 
@@ -1245,18 +1255,7 @@ section.secound .artical .img-right .img .text .button {
     margin-top: 10px;
   }
   section.secound .artical .img-left .img-text {
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  section.secound .artical .img-left .img-text h2 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  section.secound .artical .img-left .img-text p {
-    font-size: 14px;
-  }
-  section.secound .artical .img-left .img-text button {
-    padding: 2px 8px;
+    display: none;
   }
   section.secound .artical .img-right {
     margin: 0;
@@ -1274,34 +1273,7 @@ section.secound .artical .img-right .img .text .button {
     border-radius: 40px;
   }
   section.secound .artical .img-right .img .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    padding: 20px;
-    width: 100%;
-    height: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    border-radius: 40px;
-  }
-  section.secound .artical .img-right .img .text h2 {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-  section.secound .artical .img-right .img .text p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  section.secound .artical .img-right .img .text button {
-    padding: 2px 8px;
+    display: none;
   }
 }
 
@@ -1516,7 +1488,7 @@ section.third .pagination {
   }
   section.third .gmaes .play .game .desc .when {
     margin-bottom: 10px;
-    width: 14%;
+    width: 20%;
   }
   section.third .gmaes .play .game .desc h3 {
     font-size: 18px;
@@ -1551,6 +1523,10 @@ section.third .pagination {
     margin-top: 20px;
     width: 50%;
     height: 50%;
+  }
+  section.third .pagination {
+    margin-top: 10px;
+    margin-left: -10px;
   }
 }
 
@@ -1684,9 +1660,13 @@ section.third .pagination {
 }
 @media (max-width: 767px) {
   .popup .content {
-    width: 70%;
+    width: 60%;
     height: auto;
     padding: 10px;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
   }
   .popup .content .i {
     font-size: 18px;
@@ -1694,7 +1674,7 @@ section.third .pagination {
   .popup .content i {
     font-size: 16px;
     position: absolute;
-    top: 14px;
+    top: 18px;
     left: 0;
   }
 }
@@ -1807,6 +1787,16 @@ footer .contact button {
     margin-right: 10px;
     width: 180px;
     height: 180px;
+  }
+  footer .gallary .img-box .text h4 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  footer .gallary .img-box .text p {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1;
   }
   footer .links {
     width: 100%;
